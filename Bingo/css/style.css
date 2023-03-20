@@ -1,0 +1,62 @@
+@import url("./root.css");
+
+body {
+  background: linear-gradient(90deg, var(--bgBody), var(--bgBody2) 75%);
+}
+
+table {
+  background-color: var(--color1);
+}
+
+table caption {
+  background-color: var(--color2);
+  caption-side: top;
+  color: white;
+}
+
+#buttonNumberRandom {
+  position: absolute;
+  left: 64%;
+  top: 5%;
+  font: normal bold 25px/1.5 monospace;
+  width: 20%;
+  height: 25%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, hsl(239, 100%, 59%), hsl(239, 84%, 55%));
+}
+
+#buttonNumberRandom:active {
+  opacity: 0.5;
+}
+
+.bg-white-td {
+  background-color: #ffffff;
+}
+
+.winner {
+  z-index: 1000;
+  position: absolute;
+  inset: 50% 47%;
+  transform: translate(-50%, -50%);
+  border: none rgb(0, 0, 0) 5px;
+  width: 40vw;
+  height: 50vh;
+  backdrop-filter: blur(8px);
+}
+
+.winner .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.winner .box h1 {
+  color: hsl(0, 0%, 0%);
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
